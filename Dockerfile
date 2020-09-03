@@ -9,6 +9,6 @@ RUN pip3 install ansible shade openstacksdk hvac
 RUN mkdir -p /opt/vault
 RUN curl -L https://releases.hashicorp.com/vault/1.5.3/vault_1.5.3_linux_amd64.zip -o /tmp/vault.zip
 RUN unzip /tmp/vault.zip vault -d /usr/bin
-RUN rm /tmp/vault.zip -d 
+RUN rm /tmp/vault.zip
 
 CMD [ "/bin/bash" ]
